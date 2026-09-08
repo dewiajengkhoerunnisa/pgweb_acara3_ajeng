@@ -1,0 +1,138 @@
+```html
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #color_area {
+            height: 500px;
+            background-color: #ffc6c6;
+            border-radius: 15px;
+        }
+
+        /* Alert identitas */
+        .identitas {
+            background-color: #ffe4ec;
+            color: #d63384;
+            border: 2px solid #f8a9c4;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(214, 51, 132, 0.15);
+            font-weight: 500;
+        }
+
+        /* Tombol Pink */
+        .btn-pink {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+        }
+
+        .btn-pink:hover {
+            background-color: #ff4da6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Area warna -->
+        <div class="row mt-3">
+            <div class="col" id="color_area"></div>
+        </div>
+
+        <br>
+
+        <!-- Tombol warna -->
+        <div class="row g-2">
+
+            <div class="col">
+                <button type="button" class="btn btn-danger w-100" onclick="merah()">
+                    Merah
+                </button>
+            </div>
+
+            <div class="col">
+                <button type="button" class="btn btn-primary w-100" onclick="biru()">
+                    Biru
+                </button>
+            </div>
+
+            <div class="col">
+                <button type="button" class="btn btn-success w-100" onclick="hijau()">
+                    Hijau
+                </button>
+            </div>
+
+            <div class="col">
+                <button type="button" class="btn btn-warning w-100" onclick="kuning()">
+                    Kuning
+                </button>
+            </div>
+
+            <div class="col">
+                <button type="button" class="btn btn-pink w-100" onclick="pink()">
+                    Pink
+                </button>
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- Identitas -->
+        <div class="alert identitas text-center" role="alert">
+            <strong>Dewi Ajeng Khoerun Nisa</strong>
+            <br>
+            25/567670/SV/27227
+            <br>
+            PGWEB Acara 3
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // Function untuk mengubah warna menjadi merah
+        function merah() {
+            document.getElementById("color_area").style.backgroundColor = "red";
+        }
+
+        // Function untuk mengubah warna menjadi biru
+        function biru() {
+            document.getElementById("color_area").style.backgroundColor = "blue";
+        }
+
+        // Function untuk mengubah warna menjadi hijau
+        function hijau() {
+            document.getElementById("color_area").style.backgroundColor = "green";
+        }
+
+        // Function untuk mengubah warna menjadi kuning
+        function kuning() {
+            document.getElementById("color_area").style.backgroundColor = "yellow";
+        }
+
+        // Function untuk mengubah warna menjadi pink
+        function pink() {
+            document.getElementById("color_area").style.backgroundColor = "pink";
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
